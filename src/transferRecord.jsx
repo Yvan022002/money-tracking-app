@@ -1,6 +1,6 @@
 import{use, useState} from 'react'
 import senderImg from "./assets/Happy millennial african american man in glasses….jpg"
-import profilImg from "./assets/665fe22b-4c34-4690-b4a2-35ef0b1a3788.jpg"
+
 
 function BtnStatus({type}){
    const statusStyles = {
@@ -18,23 +18,23 @@ function Row({sender,date,status,amount}){
     return(
              <div className="table-row text-left bg-white shadow-md rounded-xl overflow-hidden">
                     <div className="table-cell">
-                        <div className="flex flex-row gap-2 items-center m-4">
+                        <div className="flex flex-row gap-2 items-center m-2">
                         <img src={senderImg} alt="" className='size-12 rounded-full'/>
                         <span>{sender}</span>
                     </div>
                     </div>
                     <div className="table-cell align-middle">
-                        <div className="m-4">{date}</div>
+                        <div className="m-2">{date}</div>
                     </div>
-                    <div className="table-cell align-middle"><div className="m-4"><BtnStatus type={status}/></div> </div>
-                    <div className="table-cell align-middle"><div className="m-4">{amount}</div></div>
+                    <div className="table-cell align-middle"><div className="m-2"><BtnStatus type={status}/></div> </div>
+                    <div className="table-cell align-middle"><div className="m-2">{amount}</div></div>
              </div>
     )
 }
 
 function TransferRecord(){
     return(
-        <div className="table w-200 border-spacing-y-1">
+        <div className="table w-[100%] border-spacing-y-1">
             <div className="table-header-group">
                 <div className="table-row opacity-50">
                     <div className="table-cell"><div className="m-4">Sender</div></div>

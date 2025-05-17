@@ -23,7 +23,7 @@ function Record(){
 
 function StatView(){
     return(
-        <div className="rounded-4xl bg-white-500 shadow-md w-80 p-4 flex flex-col gap-2">
+        <div className="rounded-4xl bg-white shadow-md w-80 p-4 flex flex-col gap-2">
             <div className="flex items-center justify-between">
                 <div className="flex items-center gap-x-2">
                     <span className="font-medium text-xl">Statistic</span>
