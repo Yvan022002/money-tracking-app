@@ -1,10 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import Card from "./card.jsx"
+import Record from "./statView.jsx"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Card/>
+    <Record/>
   </StrictMode>,
 )
+
